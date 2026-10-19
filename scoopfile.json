@@ -1,0 +1,94 @@
+{
+  "buckets": [
+    {
+      "Source": "https://github.com/glubifedalt/artcraft-bucket",
+      "Name": "artcraft"
+    }
+  ],
+  "apps": [
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "artcraft-launcher",
+      "Version": "0.5.1"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "cadcraft",
+      "Version": "0.8.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "deckcraft",
+      "Version": "0.8.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "designcraft",
+      "Version": "0.9.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "effectcraft",
+      "Version": "0.11.1"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "figcraft",
+      "Version": "0.7.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "filmcraft",
+      "Version": "0.9.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "gridcraft",
+      "Version": "0.8.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "lightcraft",
+      "Version": "0.9.1"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "pdfcraft",
+      "Version": "0.9.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "photocraft",
+      "Version": "0.10.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "soundcraft",
+      "Version": "0.8.0"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "vectorcraft",
+      "Version": "0.13.1"
+    },
+    {
+      "Source": "artcraft",
+      "Info": "64bit",
+      "Name": "wordcraft",
+      "Version": "0.8.0"
+    }
+  ]
+}
