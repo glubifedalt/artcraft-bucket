@@ -1,0 +1,39 @@
+{
+  "version": "0.9.0",
+  "description": "PdfCraft — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/pdfcraft",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "pdfcraft-0.9.0-windows-x64-portable",
+      "url": "https://github.com/storytold/pdfcraft/releases/download/v0.9.0/pdfcraft-0.9.0-windows-x64-portable.zip",
+      "hash": "e09f5bb89ab830e3f123a8779e28e203aef243a23997586c68a67d5b4995f429"
+    }
+  },
+  "bin": [
+    "pdfcraft.exe",
+    "pdfcraft-cli.exe"
+  ],
+  "shortcuts": [
+    [
+      "pdfcraft.exe",
+      "PdfCraft"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/pdfcraft"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/pdfcraft/releases/download/v$version/pdfcraft-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/pdfcraft/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "pdfcraft-$version-windows-x64-portable"
+      }
+    }
+  },
+  "persist": "PdfCraftData"
+}

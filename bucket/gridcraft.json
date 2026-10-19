@@ -1,0 +1,38 @@
+{
+  "version": "0.8.0",
+  "description": "GridCraft — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/gridcraft",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "gridcraft-0.8.0-windows-x64-portable",
+      "url": "https://github.com/storytold/gridcraft/releases/download/v0.8.0/gridcraft-0.8.0-windows-x64-portable.zip",
+      "hash": "b0ab27606b161bd0919cff6a321a81ca227eb2262a9709853c2079dbc4097567"
+    }
+  },
+  "bin": [
+    "gridcraft.exe",
+    "gridcraft-cli.exe"
+  ],
+  "shortcuts": [
+    [
+      "gridcraft.exe",
+      "GridCraft"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/gridcraft"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/gridcraft/releases/download/v$version/gridcraft-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/gridcraft/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "gridcraft-$version-windows-x64-portable"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": "0.11.1",
+  "description": "EffectCraft — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/effectcraft",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "effectcraft-0.11.1-windows-x64-portable",
+      "url": "https://github.com/storytold/effectcraft/releases/download/v0.11.1/effectcraft-0.11.1-windows-x64-portable.zip",
+      "hash": "78bd7f63c6bd814bc33f07bd523b003a5f8d095244c5f67bd70e902448fd6e34"
+    }
+  },
+  "bin": [
+    "effectcraft.exe",
+    "effectcraft-cli.exe"
+  ],
+  "shortcuts": [
+    [
+      "effectcraft.exe",
+      "EffectCraft"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/effectcraft"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/effectcraft/releases/download/v$version/effectcraft-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/effectcraft/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "effectcraft-$version-windows-x64-portable"
+      }
+    }
+  },
+  "persist": "EffectCraftData"
+}

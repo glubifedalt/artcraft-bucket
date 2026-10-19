@@ -1,0 +1,39 @@
+{
+  "version": "0.13.1",
+  "description": "VectorCraft — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/vectorcraft",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "vectorcraft-0.13.1-windows-x64-portable",
+      "url": "https://github.com/storytold/vectorcraft/releases/download/v0.13.1/vectorcraft-0.13.1-windows-x64-portable.zip",
+      "hash": "6c46505e20dfd637b37ff8e1ead9aa69758acdc877ae46cc8b3338463e078b51"
+    }
+  },
+  "bin": [
+    "vectorcraft.exe",
+    "vectorcraft-cli.exe"
+  ],
+  "shortcuts": [
+    [
+      "vectorcraft.exe",
+      "VectorCraft"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/vectorcraft"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/vectorcraft/releases/download/v$version/vectorcraft-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/vectorcraft/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "vectorcraft-$version-windows-x64-portable"
+      }
+    }
+  },
+  "persist": "VectorCraftData"
+}

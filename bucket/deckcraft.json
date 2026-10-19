@@ -1,0 +1,38 @@
+{
+  "version": "0.8.0",
+  "description": "DeckCraft — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/deckcraft",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "deckcraft-0.8.0-windows-x64-portable",
+      "url": "https://github.com/storytold/deckcraft/releases/download/v0.8.0/deckcraft-0.8.0-windows-x64-portable.zip",
+      "hash": "5fbcf18b6cd7e95c3c371049ae0bb77d2c6e62b0ac1b8f009fe8228d9aed9b17"
+    }
+  },
+  "bin": [
+    "deckcraft.exe",
+    "deckcraft-cli.exe"
+  ],
+  "shortcuts": [
+    [
+      "deckcraft.exe",
+      "DeckCraft"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/deckcraft"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/deckcraft/releases/download/v$version/deckcraft-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/deckcraft/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "deckcraft-$version-windows-x64-portable"
+      }
+    }
+  }
+}

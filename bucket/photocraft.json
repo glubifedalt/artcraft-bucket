@@ -1,0 +1,39 @@
+{
+  "version": "0.10.0",
+  "description": "PhotoCraft — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/photocraft",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "photocraft-0.10.0-windows-x64-portable",
+      "url": "https://github.com/storytold/photocraft/releases/download/v0.10.0/photocraft-0.10.0-windows-x64-portable.zip",
+      "hash": "66b7e47d66589eb6947c8d7417c80fa44621cf83823ffdc47f42024eb03bd5d2"
+    }
+  },
+  "bin": [
+    "photocraft.exe",
+    "photocraft-cli.exe"
+  ],
+  "shortcuts": [
+    [
+      "photocraft.exe",
+      "PhotoCraft"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/photocraft"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/photocraft/releases/download/v$version/photocraft-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/photocraft/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "photocraft-$version-windows-x64-portable"
+      }
+    }
+  },
+  "persist": "PhotoCraftData"
+}

@@ -1,0 +1,38 @@
+{
+  "version": "0.5.1",
+  "description": "ArtCraft Launcher — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/craft-launcher",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "artcraft-launcher-0.5.1-windows-x64-portable",
+      "url": "https://github.com/storytold/craft-launcher/releases/download/v0.5.1/artcraft-launcher-0.5.1-windows-x64-portable.zip",
+      "hash": "e2780478bc06276880448da69e9d8ef56685cbc1562fedbdabd41a09ee593937"
+    }
+  },
+  "bin": [
+    "artcraft-launcher.exe"
+  ],
+  "shortcuts": [
+    [
+      "artcraft-launcher.exe",
+      "ArtCraft Launcher"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/craft-launcher"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/craft-launcher/releases/download/v$version/artcraft-launcher-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/craft-launcher/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "artcraft-launcher-$version-windows-x64-portable"
+      }
+    }
+  },
+  "persist": "ArtCraftLauncherData"
+}

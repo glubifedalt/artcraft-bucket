@@ -1,0 +1,38 @@
+{
+  "version": "0.8.0",
+  "description": "WordCraft — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/wordcraft",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "wordcraft-0.8.0-windows-x64-portable",
+      "url": "https://github.com/storytold/wordcraft/releases/download/v0.8.0/wordcraft-0.8.0-windows-x64-portable.zip",
+      "hash": "c6a5b6e86f29da2c83e3a7a9a6b4557e89417235a153a2a37cd55281d84154d6"
+    }
+  },
+  "bin": [
+    "wordcraft.exe",
+    "wordcraft-cli.exe"
+  ],
+  "shortcuts": [
+    [
+      "wordcraft.exe",
+      "WordCraft"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/wordcraft"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/wordcraft/releases/download/v$version/wordcraft-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/wordcraft/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "wordcraft-$version-windows-x64-portable"
+      }
+    }
+  }
+}

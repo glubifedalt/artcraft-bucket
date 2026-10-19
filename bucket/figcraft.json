@@ -1,0 +1,38 @@
+{
+  "version": "0.7.0",
+  "description": "FigCraft — official portable ArtCraft application",
+  "homepage": "https://github.com/storytold/figcraft",
+  "license": "MIT|Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "extract_dir": "figcraft-0.7.0-windows-x64-portable",
+      "url": "https://github.com/storytold/figcraft/releases/download/v0.7.0/figcraft-0.7.0-windows-x64-portable.zip",
+      "hash": "a7ba73b85e44c7fe3f56e5b7ba55ca74eb46274e6bb3b63fda3ee2e2550b8ad0"
+    }
+  },
+  "bin": [
+    "figcraft.exe",
+    "figcraft-cli.exe"
+  ],
+  "shortcuts": [
+    [
+      "figcraft.exe",
+      "FigCraft"
+    ]
+  ],
+  "notes": "Official upstream portable package. Use Scoop to manage updates; portable settings are persisted where supported by upstream.",
+  "checkver": {
+    "github": "https://github.com/storytold/figcraft"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/storytold/figcraft/releases/download/v$version/figcraft-$version-windows-x64-portable.zip",
+        "hash": {
+          "url": "https://github.com/storytold/figcraft/releases/download/v$version/SHA256SUMS.txt"
+        },
+        "extract_dir": "figcraft-$version-windows-x64-portable"
+      }
+    }
+  }
+}
